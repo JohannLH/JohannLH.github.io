@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias y Consejos - Ferretería Central</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1157/1157109.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Ferretería Central
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="./Herramientas.html">Herramientas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Pinturas.html">Pinturas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Ubicación.html">Ubicación</a></li>
+                </ul>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch">
+                    <label class="form-check-label" for="themeSwitch">
+                        <i class="bi bi-moon-stars-fill"></i>
+                        <i class="bi bi-sun-fill" style="display: none;"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="page-header text-center text-white py-5">
+        <div class="container">
+            <h1 class="display-4">Noticias y Consejos</h1>
+            <p class="lead">Mantente al día con las últimas novedades y aprende trucos de nuestros expertos.</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row justify-content-center g-4">
+            <div class="col-lg-8">
+                <article class="article-card">
+                    <img src="https://images.pexels.com/photos/4099235/pexels-photo-4099235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Pared pintada con rodillo">
+                    <div class="card-body">
+                        <h3 class="card-title mt-3">Cómo Pintar una Habitación en 5 Sencillos Pasos</h3>
+                        <p class="text-muted">Publicado el 2 de julio de 2025</p>
+                        <p>Renovar una habitación con pintura es un proyecto gratificante. Sigue estos pasos para lograr un acabado profesional y duradero.</p>
+                        
+                        <ol class="list-group list-group-numbered mt-4">
+                            <li class="list-group-item"><b>Preparar la superficie:</b> Limpia las paredes, repara cualquier grieta y lija suavemente.</li>
+                            <li class="list-group-item"><b>Proteger el área:</b> Cubre los muebles y el piso. Usa cinta de pintor para los bordes.</li>
+                            <li class="list-group-item"><b>Aplicar el sellador:</b> Mejora la adherencia y el rendimiento de la pintura.</li>
+                            <li class="list-group-item"><b>Pintar:</b> Usa una brocha para los bordes y un rodillo para las áreas grandes.</li>
+                            <li class="list-group-item"><b>Segunda capa y limpieza:</b> Aplica una segunda capa si es necesario y retira la cinta.</li>
+                        </ol>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-8">
+                <article class="article-card">
+                    <img src="https://images.pexels.com/photos/175039/pexels-photo-175039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Herramientas variadas">
+                    <div class="card-body">
+                        <h3 class="card-title mt-3">Las 5 Herramientas que no Pueden Faltar en tu Hogar</h3>
+                        <p class="text-muted">Publicado el 25 de junio de 2025</p>
+                        <p>Estar preparado para reparaciones básicas es fácil si cuentas con el equipo adecuado. Te recomendamos tener siempre a mano:</p>
+                        <ul class="list-group list-group-flush mt-3">
+                            <li class="list-group-item"><i class="bi bi-hammer me-2"></i>Martillo</li>
+                            <li class="list-group-item"><i class="bi bi-tools me-2"></i>Juego de Destornilladores</li>
+                            <li class="list-group-item"><i class="bi bi-rulers me-2"></i>Cinta Métrica</li>
+                            <li class="list-group-item"><i class="bi bi-wrench-adjustable me-2"></i>Alicate Universal</li>
+                            <li class="list-group-item"><i class="bi bi-power me-2"></i>Taladro Inalámbrico</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer pt-4 pb-3 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 Ferretería Central</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinturas - Ferretería Central</title>
+    <link rel="stylesheet" href="./Style.css" />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1157/1157109.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html { background-color: #f8f9fa; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Ferretería Central
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="./Herramientas.html">Herramientas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Pinturas.html">Pinturas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Ubicación.html">Ubicación</a></li>
+                </ul>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch">
+                    <label class="form-check-label" for="themeSwitch">
+                        <i class="bi bi-moon-stars-fill"></i>
+                        <i class="bi bi-sun-fill" style="display: none;"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="page-header text-center text-white py-5">
+        <div class="container">
+            <h1 class="display-4">Catálogo de Pinturas</h1>
+            <p class="lead">Dale color a tus ideas con nuestra selección de pinturas de alta calidad para interiores y exteriores.</p>
+        </div>
+    </header>
+
+        <div class="producto-destacado p-4 mb-5 rounded-3" style="margin-left: 10px; margin-right: 10px;">
+            <h2 class="text-center mb-4">🎨 Oferta Especial 🎨</h2>
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center">
+                    <img src="https://innovacentro.com.do/product/image/medium/053288_0.png" class="img-fluid rounded" alt="Pintura Acrílica Satinada">
+                </div>
+                <div class="col-md-7">
+                    <h3>Pintura Acrílica Satinada Premium</h3>
+                    <p class="lead">Nuestra pintura más popular por su acabado sedoso y duradero. Es lavable, de bajo olor y perfecta para salas, comedores y habitaciones. ¡Transforma tus espacios con un solo toque!</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Acabado:</strong> Satinado, elegante y fácil de limpiar.</li>
+                        <li><strong>Uso:</strong> Ideal para interiores.</li>
+                        <li><strong>Rendimiento:</strong> Cubre hasta 40 m² por galón.</li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <h4 class="me-3 mb-0">Precio: $45.99 <small class="text-decoration-line-through text-muted">$52.00</small></h4>
+                        <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#modalPinturaAcrilica">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <h2 class="text-center mb-4">Nuestra Selección</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" style="margin-left: 10px; margin-right: 10px;">
+            <div class="col">
+                <div class="card h-100 changestyle">
+                    <img src="https://sherwin.cl/wp-content/uploads/sites/8/2024/05/3D-SW-LINEA-PROFESIONAL-Esmalte-Sintetico-GL-LITO-2.png" class="card-img-pintura" alt="Esmalte Sintético">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Esmalte Sintético Brillante</h5>
+                        <p class="card-text">Protección y brillo superior para metales y maderas.</p>
+                        <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalEsmalte">Especificaciones</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                 <div class="card h-100 changestyle">
+                    <img src="https://www.lancopaints.com/usa/wp-content/uploads/sites/7/2017/08/Maxima-PM-Ext-SG-MA2850-478x500.png" class="card-img-pintura" alt="Pintura para Exteriores">
+                     <div class="card-body d-flex flex-column">
+                         <h5 class="card-title">Pintura para Exteriores</h5>
+                         <p class="card-text">Máxima resistencia al sol, la lluvia y el moho.</p>
+                         <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalExterior">Especificaciones</button>
+                     </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 changestyle">
+                    <img src="https://caribebrochasyherramientas.com/wp-content/uploads/2021/09/Bro-prof-4-lat-sin-emp-alta-600x600.jpg" class="card-img-pintura" alt="Brocha Profesional">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Brocha Profesional</h5>
+                        <p class="card-text">Cerdas finas para un acabado liso y sin marcas. 4 pulgadas.</p>
+                        <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalBrocha">Especificaciones</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 changestyle">
+                    <img src="https://www.pinturascorona.com/images/productos/especialidades/sellador-interior-galon.jpg" class="card-img-pintura" alt="Sellador de Pared">
+                     <div class="card-body d-flex flex-column">
+                         <h5 class="card-title">Sellador de Pared</h5>
+                         <p class="card-text">Prepara y sella superficies nuevas o porosas antes de pintar.</p>
+                         <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalSellador">Especificaciones</button>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPinturaAcrilica" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pintura Acrílica Satinada Premium</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Disponibilidad:</strong> <span class="text-success">En Stock</span></p>
+                    <p><strong>Código (SKU):</strong> P-ACR-01</p>
+                    <p><strong>Tipo:</strong> Acrílica base agua</p>
+                    <p><strong>Acabado:</strong> Satinado</p>
+                    <p><strong>Uso:</strong> Interiores</p>
+                    <p><strong>Presentación:</strong> Galón (3.78 L)</p>
+                    <p><strong>Precio:</strong> $45.99 <small class="text-decoration-line-through text-muted">$52.00</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalEsmalte" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Esmalte Sintético Brillante</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Disponibilidad:</strong> <span class="text-success">En Stock</span></p>
+                    <p><strong>Código (SKU):</strong> P-ESM-05</p>
+                    <p><strong>Tipo:</strong> Esmalte base aceite</p>
+                    <p><strong>Acabado:</strong> Brillante</p>
+                    <p><strong>Uso:</strong> Interior / Exterior (Metales y Madera)</p>
+                    <p><strong>Presentación:</strong> 1/4 Galón</p>
+                    <p><strong>Precio:</strong> $15.50</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalExterior" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pintura para Exteriores</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Disponibilidad:</strong> <span class="text-success">En Stock</span></p>
+                    <p><strong>Código (SKU):</strong> P-EXT-12</p>
+                    <p><strong>Tipo:</strong> Acrílica Modificada</p>
+                    <p><strong>Acabado:</strong> Mate</p>
+                    <p><strong>Propiedades:</strong> Antihongos, Impermeabilizante</p>
+                    <p><strong>Presentación:</strong> Galón (3.78 L)</p>
+                    <p><strong>Precio:</strong> $55.00</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBrocha" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Brocha Profesional</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Disponibilidad:</strong> <span class="text-success">En Stock</span></p>
+                    <p><strong>Código (SKU):</strong> A-BR-04</p>
+                    <p><strong>Tamaño:</strong> 4 Pulgadas</p>
+                    <p><strong>Material:</strong> Cerdas 100% sintéticas</p>
+                    <p><strong>Uso:</strong> Para todo tipo de pinturas</p>
+                    <p><strong>Precio:</strong> $8.99</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalSellador" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sellador de Pared</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Disponibilidad:</strong> <span class="text-warning">Stock Bajo</span></p>
+                    <p><strong>Código (SKU):</strong> P-SEL-01</p>
+                    <p><strong>Tipo:</strong> Sellador Acrílico</p>
+                    <p><strong>Uso:</strong> Paredes de cemento, yeso y drywall</p>
+                    <p><strong>Rendimiento:</strong> Aprox. 50 m² por galón</p>
+                    <p><strong>Presentación:</strong> Galón (3.78 L)</p>
+                    <p><strong>Precio:</strong> $35.75</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer pt-4 pb-3 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 Ferretería Central</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

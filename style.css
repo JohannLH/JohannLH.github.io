@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600;700;800&display=swap');
+
+/* --- 1. VARIABLES ROOT Y COLORES --- */
+:root {
+  --color-azul-principal: #005A9C; 
+  --color-amarillo-acento: #ffc107; 
+  --color-fondo-claro: #f8f9fa;
+  --color-texto-principal: #212934;
+  --color-blanco: #ffffff;
+  --color-borde-suave: #e9ecef;
+
+  /* Bootstrap asignaciones */
+  --bs-primary: var(--color-amarillo-acento);
+  --bs-primary-rgb: 255, 193, 7;
+  --bs-body-font-family: 'Roboto', sans-serif;
+  --bs-heading-font-family: 'Montserrat', sans-serif;
+  --bs-body-color: #212529;
+  --bs-body-bg: #f8f9fa;
+  --bs-light-bg-subtle: #f3f3f3;
+  --bs-border-color: #dee2e6;
+}
+
+/* --- 2. MODO OSCURO --- */
+[data-bs-theme="dark"] {
+  --bs-body-color: #dee2e6;
+  --bs-body-bg: #212529;
+  --bs-light-bg-subtle: #343a40;
+  --bs-border-color: #495057;
+  --bs-body-secondary-color: rgba(222, 226, 230, 0.75);
+}
+
+[data-bs-theme="dark"] body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+[data-bs-theme="dark"] .navbar {
+  background-color: rgba(29, 29, 29, 0.85);
+}
+[data-bs-theme="dark"] .card {
+  background-color: #1e1e1e;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+[data-bs-theme="dark"] h1, 
+[data-bs-theme="dark"] h2, 
+[data-bs-theme="dark"] h3 {
+  color: var(--color-blanco);
+}
+[data-bs-theme="dark"] .hero-section {
+  background-color: #004275;
+}
+
+/* --- 3. ESTILOS GENERALES --- */
+html {
+  background-color: #efe4d2;
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+  font-size: 18px;
+  color: var(--color-texto-principal);
+  background-color: var(--color-fondo-claro);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--bs-heading-font-family);
+  font-weight: 800;
+  color: var(--color-texto-principal);
+}
+
+/* --- 4. ENCABEZADO PRINCIPAL --- */
+h1 {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+/* --- 5. SECCIÓN HERO --- */
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    url('https://images.pexels.com/photos/8005396/pexels-photo-8005396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  color: var(--color-blanco);
+  padding: 60px 0;
+}
+.hero-section h1, .hero-section p {
+  color: var(--color-blanco);
+}
+
+/* --- 6. GRID DE IMÁGENES HERRAMIENTAS --- */
+.imgherramientas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  height: 200px;
+  object-fit: contain;
+  background-color: #fff;
+}
+.imgpintura {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  height: 200px;
+  object-fit: contain;
+  background-color: #fff;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+  background-color: #fff;
+}
+
+
+/* --- 7. ESTILOS HOME --- */
+.StyleHome {
+  display: flex;
+  background-color: #efe4d2;
+  align-content: center;
+  justify-content: center;
+  color: black;
+}
+
+/* --- 8. BOTONES Y HOVER --- */
+.changestyle:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+/* --- 9. TARJETAS (CARD) --- */
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+  transition: all 0.4s ease;
+  background-color: var(--color-blanco);
+  border-color: var(--bs-border-color);
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* --- 10. PRODUCTO DESTACADO --- */
+.producto-destacado {
+  background-color: var(--bs-light-bg-subtle);
+  border-left: 5px solid #ffc107;
+}
+
+/* --- 11. SECCIÓN ABOUT-US --- */
+.about-us {
+  border-top: 5px solid #ffc107;
+}
+
+/* --- 12. BOTONES PRIMARIOS --- */
+.btn-primary {
+  padding: 12px 28px;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+  color: var(--color-texto-principal);
+  background-color: var(--color-amarillo-acento);
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* --- 13. FOOTER --- */
+.footer {
+  background-color: #212934;
+  color: var(--color-fondo-claro);
+  padding: 40px 0;
+}
+.footer .social-icon {
+  font-size: 1.5rem;
+  color: var(--color-fondo-claro);
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+.footer .social-icon:hover {
+  color: var(--color-amarillo-acento);
+  transform: scale(1.2);
+}
+.footer a {
+  color: #adb5bd;
+}
+
+/* --- 14. CARRUSEL DE OFERTAS --- */
+#ofertas-carrusel .carousel-item {
+  height: 50vh;
+  min-height: 400px;
+  background-color: var(--color-gris-oscuro);
+}
+#ofertas-carrusel .carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+#ofertas-carrusel .carousel-caption {
+  background: none;
+  backdrop-filter: none;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  color: white;
+}
+
+.carousel-image {
+  height: 450px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 250px;
+  }
+}
+
+/* --- 15. ANIMACIONES --- */
+.animated-element {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animated-element.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- ESTILO PARA MODO CLARO (POR DEFECTO) --- */
+.page-header {
+  background: transparent; 
+  padding: 3rem 1.5rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #dee2e6; 
+  text-align: center;
+  border-radius: 0; 
+}
+
+.page-header h1, 
+.page-header .lead {
+  color: var(--color-texto-principal); 
+  text-shadow: none; 
+}
+
+/* --- ESTILO PARA MODO OSCURO (SOBREESCRIBE EL ANTERIOR) --- */
+[data-bs-theme="dark"] .page-header {
+  border-bottom: 4px solid var(--color-amarillo-acento); 
+}
+
+/* En modo oscuro, el texto vuelve a ser blanco para que sea legible */
+[data-bs-theme="dark"] .page-header h1,
+[data-bs-theme="dark"] .page-header .lead {
+    color: white; 
+}
+
+/* 2. Estilo para las tarjetas de los artículos (ya lo tenías, un poco refinado) */
+.article-card {
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-borde-suave);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+.article-card .card-body {
+  padding: 2rem;
+}
+
+/* 3. Estilo mejorado para la lista ordenada de pasos */
+.list-group-numbered .list-group-item {
+  border: none;
+  padding-left: 2.5rem; 
+  position: relative;
+}
+.list-group-numbered .list-group-item::before {
+  /* Estilo para el número */
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--color-blanco);
+  background-color: var(--color-naranja-acento); 
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+/* 4. Reglas para el modo oscuro */
+[data-bs-theme="dark"] .page-header {
+    background: transparent; 
+    border-bottom: 4px solid var(--color-amarillo-acento); 
+    padding-bottom: 2rem; 
+    border-radius: 0; 
+}
+
+[data-bs-theme="dark"] .article-card {
+    background-color: #1e1e1e;
+    border-color: rgba(255,255,255,0.1);
+}
+
+[data-bs-theme="dark"] .list-group-item:hover {
+    color: white !important; 
+    background-color: #343a40 !important; 
+    
+}
+
+/* Título h5 dentro de la tarjeta */
+.card:hover .card-title {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+/* Párrafo p dentro de la tarjeta */
+.card:hover .card-text {
+    color: black; 
+    transition: color 0.3s ease;
+}
